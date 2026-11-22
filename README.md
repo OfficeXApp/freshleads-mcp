@@ -6,10 +6,10 @@ FreshLeads finds businesses that are new online (new websites, product launches,
 new apps and directory listings) and scores each one against your description of
 a good customer. This connector lets an AI assistant use your FreshLeads account.
 
-- **Server URL:** `https://freshleads.app/mcp`
+- **Server URL:** `https://freshleads.cloud/mcp`
 - **Transport:** Streamable HTTP
-- **Sign-in:** OAuth 2.1 (dynamic client registration, client ID metadata documents, PKCE S256). An API key from the FreshLeads app also works as a Bearer token.
-- **Docs:** https://freshleads.app/connectors/
+- **Sign-in:** OAuth 2.1 (dynamic client registration, client ID metadata documents, PKCE S256). You choose Full access or Read only when you sign in.
+- **Docs:** https://freshleads.cloud/connectors/
 
 This repository holds the public listing files only (registry metadata, plugin
 manifests, icon). The server is hosted; there is no server code here.
@@ -18,12 +18,12 @@ manifests, icon). The server is hosted; there is no server code here.
 
 In an assistant that supports remote MCP servers (Claude, ChatGPT, Cursor,
 VS Code, Grok, Le Chat, Manus and others), add a custom connector with the URL
-`https://freshleads.app/mcp`, then sign in to FreshLeads in the window that opens.
+`https://freshleads.cloud/mcp`, then sign in to FreshLeads in the window that opens.
 
 ```json
 {
   "mcpServers": {
-    "freshleads": { "url": "https://freshleads.app/mcp" }
+    "freshleads": { "url": "https://freshleads.cloud/mcp" }
   }
 }
 ```
@@ -48,9 +48,9 @@ The connector does not send email, buy plans or credits, or delete data.
 ## Data
 
 - Business contacts only: no personal webmail addresses, no personal social profiles, no street addresses.
-- Leads from websites show only when the website's robots.txt allows our crawler ([FreshLeadsBot](https://freshleads.app/bot/)).
-- Privacy: https://freshleads.app/privacy/ · Terms: https://freshleads.app/terms/ · Remove a business: https://freshleads.app/remove/
+- Leads from websites show only when the website's robots.txt allows our crawler ([FreshLeadsBot](https://freshleads.cloud/bot/)).
+- Privacy: https://freshleads.cloud/privacy/ · Terms: https://freshleads.cloud/terms/ · Remove a business: https://freshleads.cloud/remove/
 
 ## Support
 
-https://freshleads.app/support/ · operator@zoom-gtm.com
+https://freshleads.cloud/support/ · operator@zoom-gtm.com

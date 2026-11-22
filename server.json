@@ -1,11 +1,11 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "app.freshleads/freshleads",
+  "name": "cloud.freshleads/freshleads",
   "title": "FreshLeads",
   "description": "Find new businesses that match your offer, the day they go online. Search, save and filter leads.",
   "version": "1.0.0",
-  "websiteUrl": "https://freshleads.app/connectors/",
+  "websiteUrl": "https://freshleads.cloud/connectors/",
   "repository": { "url": "https://github.com/officexapp/freshleads-mcp", "source": "github" },
-  "icons": [{ "src": "https://freshleads.app/assets/brand/icon-512-white.png", "mimeType": "image/png", "sizes": ["512x512"] }],
-  "remotes": [{ "type": "streamable-http", "url": "https://freshleads.app/mcp" }]
+  "icons": [{ "src": "https://freshleads.cloud/assets/brand/icon-512-white.png", "mimeType": "image/png", "sizes": ["512x512"] }],
+  "remotes": [{ "type": "streamable-http", "url": "https://freshleads.cloud/mcp" }]
 }
